@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: rgb(248, 244, 245);
+}
+
+.logo {
+    background-image: linear-gradient(rgba(225, 20 , 225, 0.85), rgba(225, 220 , 180, 0.65)), url(logolu.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(242, 242, 252);
+    font-size: clamp(1.7em, 2.5vw, 2rem);
+    font-weight: 600;
+}
+.back {
+    width: 80px;
+    border: 2px solid rgb(157, 157, 204);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    padding: 3px;
+  
+  }
+  
+  .back-in {
+    width: 20px;
+  }
+  
+  .back:active {
+    width: 20px;
+    background-color: blue;
+    color: white;
+  }
+  
+  .back-back {
+    text-decoration: none;
+  }
+  
+  .back-back:active {
+    display: none;
+  }
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .grid {
+      display: grid;
+      border: 2px solid rgb(190, 190, 196);
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      width: 390px;
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+
+  h1 {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  padding-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95em;
+  color: rgb(92, 85, 85);
+
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.click {
+  padding: 20px 40px;
+}
+
+.click {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.me {
+  padding: 40px;
+    position: relative;
+    text-align: center;
+    width: 65%;
+    margin-top: 20px;
+    margin-left: 15%;
+    border-radius: 10px;
+    font-size: clamp(1.2em, 1.5vw, 2.5rem);
+    font-weight: 600;
+    border: 2px solid purple;
+    background-color: rgb(192, 189, 190);
+    color: rgb(0, 0, 0);
+    background-image: url('icons8-twitter-48.png');
+    box-shadow: 0px 00px 10px 2px rgba(0, 20, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+
+}
+
+
+section p span {
+  padding-top: 30px;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+
+section p {
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.foot {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.foot p {
+  font-size: clamp(1.1em, 1.5vw, 2.5rem);
+}
+
+.foot p span {
+  color: red;
+}

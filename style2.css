@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: rgb(248, 244, 245);
+}
+
+header a {
+  text-decoration: none;
+}
+
+.logo {
+    background-image: linear-gradient(rgba(225, 20 , 225, 0.85), rgba(225, 220 , 180, 0.65)), url(logolu.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(242, 242, 252);
+    font-size: clamp(1.7em, 2.5vw, 2rem);
+    font-weight: 600;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4);
+}
+
+.email-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center left 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px; /* Adjust padding to accommodate the icon */
+    width: 100px; /* Set a fixed width to center the text */
+  }
+  
+  
+
+.email {
+padding: 40px;
+position: relative;
+text-align: center;
+width: 65%;
+margin-top: 20px;
+margin-left: 15%;
+border-radius: 10px;
+font-size: clamp(1.2em, 1.5vw, 2.5rem);
+font-weight: 600;
+border: 2px solid rgb(243, 237, 237);
+background-color: rgb(250, 245, 245);
+color: black;
+background-image: url('icons8-email-48.png');
+box-shadow: 0px 00px 10px 2px rgba(0, 20, 0, 0.5);
+}
+
+.email:active {
+    font-weight: 100;
+    transform: translateY(3px);
+}
+
+.twitter {
+    padding: 40px;
+    position: relative;
+    text-align: center;
+    width: 65%;
+    margin-top: 20px;
+    margin-left: 15%;
+    border-radius: 10px;
+    font-size: clamp(1.2em, 1.5vw, 2.5rem);
+    font-weight: 600;
+    border: 2px solid rgb(243, 237, 237);
+    background-color: rgb(250, 245, 245);
+    background-image: url('icons8-twitter-48.png');
+    box-shadow: 0px 00px 10px 2px rgba(0, 20, 0, 0.5);
+}
+
+.twitter:active {
+    font-weight: 100;
+    transform: translateY(3px);
+}
+
+.phone {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+.phone {
+    padding: 40px;
+    position: relative;
+    text-align: center;
+    width: 65%;
+    margin-top: 20px;
+    margin-left: 15%;
+    border-radius: 10px;
+    font-size: clamp(1.2em, 1.5vw, 2.5rem);
+    font-weight: 600;
+    border: 2px solid rgb(243, 237, 237);
+    background-color: rgb(250, 245, 245);
+    color: black;
+    background-image: url('icons8-phone-40.png');
+    box-shadow: 0px 00px 10px 2px rgba(0, 20, 0, 0.5);
+} 
+
+.phone:active {
+    font-weight: 100;
+    transform: translateY(3px);
+}
+
+.address {
+    padding: 40px;
+    position: relative;
+    text-align: center;
+    width: 65%;
+    margin-top: 20px;
+    margin-left: 15%;
+    border-radius: 10px;
+    font-size: clamp(1.2em, 1.5vw, 2.5rem);
+    font-weight: 600;
+    border: 2px solid rgb(243, 237, 237);
+    background-color: rgb(250, 245, 245);
+    color: black;
+    background-image: url('icons8-address-40.png');
+    box-shadow: 0px 00px 10px 2px rgba(0, 20, 0, 0.5);
+} 
+
+.address:active {
+    font-weight: 100;
+    transform: translateY(3px);
+}
+
+.call {
+    color: red;
+    padding-top: 20px;
+    font-size: clamp(1.1em, 1.5vw, 2.5rem);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-weight: 600;
+    display: flex;
+  
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  
+}
+
+.wrapper-2 {
+position: relative;
+display: flex;
+justify-content: center;
+}
+
+.grid {
+  display: grid;
+  border: 2px solid rgb(190, 190, 196);
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  width: 350px;
+  border-radius: 15px;
+  background-color: white;
+  
+}
+
+.grid-2 {
+  display: flex;
+  justify-content: center;
+}
+ 
+.radio-container {
+    border: 2px solid rgb(106, 118, 118); 
+    padding: 0px 10px; 
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .radio-container-2 {
+    border: 2px solid rgb(106, 118, 118);
+    margin-top: 10px;
+    border-radius: 10px; 
+    margin-left: 5px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+label {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.phone-number {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+
+
+input[type="tel"] {
+  padding: 8px 85px;
+  border-radius: 10px;
+  border: 2px solid rgb(106, 118, 118);
+}
+
+
+input[type="tel"]:focus {
+background-color: transparent;
+outline: none;
+border: 2px solid black;
+}
+
+.schedule {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+select {
+  padding: 7px 85px;
+  border-radius: 10px;
+  border: 2px solid rgb(106, 118, 118)
+}
+
+select .target {
+  color: rgb(105, 101, 101);
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.information {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.book {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.booknow {
+  padding: 5px 50px;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: rgb(44, 83, 134);
+  color: white;
+  border: 1px solid blue;
+}
+
+.booknow:active {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.offer {
+  display: flex;
+  justify-content: center;
+  margin-right: 15%;
+}
+
+.pinkcall {
+  margin-left: 6px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.95em;
+  width: 98%;
+  
+}
+
+.foot {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.foot p {
+  font-size: clamp(1.1em, 1.5vw, 2.5rem);
+}
+
+.foot p span {
+  color: red;
+}
